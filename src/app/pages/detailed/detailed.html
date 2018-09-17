@@ -1,0 +1,37 @@
+<div class="testDetailed">
+    <div class="testDetailed__poster poster">
+        <img class="poster__image" src="{{_movie?.Poster}}" />
+    </div>
+    <div class="testDetailed__description description">
+        <h2 class="description__caption">{{_movie?.Title}}</h2>
+        <div class="description__actors">
+            В ролях: <strong>{{_movie?.Actors}}</strong>
+        </div>
+        <div class="description__genres">
+            Жанр: <strong>{{_movie?.Genre}}</strong>
+        </div>
+        <div class="description__rating">
+            Рейтинг <strong>IMDB</strong>: {{_movie?.imdbRating}}
+        </div>
+        <div class="description__buttons">
+            <button 
+                class="descriptions__add-button" 
+                mat-flat-button 
+                color="primary"
+                *ngIf="_addButton"
+                (click)="_addMovie(_movie)"
+            >
+                Добавить в мой список фильмов
+            </button>
+            <button 
+                class="descriptions__add-button" 
+                mat-flat-button 
+                color="warn"
+                *ngIf="_deleteButton"
+                (click)="_deleteMovie(_movie)"
+            >
+                Удалить фильм из моего списка
+            </button>
+        </div>
+    </div>
+</div>

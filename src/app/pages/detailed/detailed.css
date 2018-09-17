@@ -1,0 +1,21 @@
+.testDetailed {
+    display: flex;
+    margin-top: 20px;
+}
+.testDetailed__poster {
+    margin-right: 20px;
+}
+
+
+.description__caption {
+    margin-top: 0;
+}
+.description__actors {
+    margin-bottom: 10px;
+}
+.description__genres {
+    margin-bottom: 10px;
+}
+.description__rating {
+    margin-bottom: 10px;
+}

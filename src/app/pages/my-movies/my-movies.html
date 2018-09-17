@@ -1,0 +1,30 @@
+<div class="testMyMovies">
+    <span *ngIf="!_isEmptyMovies()" class="testMyMovies_no-data">
+        Список пуст
+    </span>
+    <a (click)="_detailedMovie(_movie.imdbID)" *ngFor="let _movie of _movies" class="testMyMovies__movie movie">
+        <div class="movie__poster">
+            <img class="movie__image" src="{{_movie.Poster}}" />
+        </div>
+        <div class="movie__description">
+            <h3 class="movie__caption">{{_movie.Title}}</h3>
+            <div class="movie__box">
+                В ролях: <strong>{{_movie.Actors}}</strong>
+            </div>
+            <div class="movie__box">
+                Жанр: <strong>{{_movie.Genre}}</strong>
+            </div>
+            <div class="movie__box">
+                Рейтинг <strong>IMDB</strong>: {{_movie.imdbRating}}
+            </div>
+            <button 
+                class="movie__delete-button" 
+                mat-flat-button 
+                color="warn"
+                (click)="_deleteMovie(_movie)"
+            >
+                Удалить фильм из моего списка
+            </button>
+        </div>
+    </a>
+</div>

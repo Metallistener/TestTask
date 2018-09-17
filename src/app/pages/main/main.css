@@ -1,0 +1,40 @@
+.testHeader__caption {
+    font-weight: 300;
+    font-size: 60px;
+    margin: 10px;
+    text-align: center;
+}
+.testContent {
+    max-width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.testNavigation {
+    width: 100%;
+}
+.testNavigation__list {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0;
+}
+.testNavigation__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+.testNavigation__link {
+    padding: 15px;
+    box-sizing: border-box;
+    display: block;
+    color: #673ab7;
+    text-decoration: none;
+    transition: 300ms;
+}
+.testNavigation__link:hover {
+    background: #f3f3f3;
+}

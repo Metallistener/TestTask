@@ -1,0 +1,49 @@
+.testSearch {
+    text-align: center;
+}
+.testSearch__form-field {
+    width: 70%;
+    display: inline-block;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.testSearch__autocomplete {
+    position: absolute;
+    top: 100%;
+    background: yellow;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    box-shadow: 0 20px 50px 0px rgba(0,0,0,0.2);
+    background: #ffffff;
+}
+.testSearch__movie {
+    padding: 10px;
+    cursor: pointer;
+}
+.testSearch__button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.year {
+    width: 30%;
+}
+
+.movie {
+    display: flex;
+}
+.movie__poster {
+    margin-right: 10px;
+}
+.movie__image {
+    width: 80px;
+}
+.movie__caption {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.movie__actors {
+    margin-bottom: 5px;
+}
